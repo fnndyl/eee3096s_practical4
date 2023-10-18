@@ -1,3 +1,6 @@
+// Hendrik Smuts (SMTHEN009) and Dylan Fanner (FNNDYL001) 
+// https://github.com/fnndyl/eee3096s_practical4 
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -60,7 +63,7 @@ uint32_t saw_LUT[NS] = {0,8,16,24,32,40,48,56,64,72,80,88,96,104,112,120,128,136
 uint32_t triangle_LUT[NS] = {0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368,384,400,416,432,448,464,480,496,512,528,544,560,576,592,608,624,640,656,672,688,704,720,736,752,768,784,800,816,832,848,864,880,896,912,928,944,960,976,992,1008,1024,1008,992,976,960,944,928,912,896,880,864,848,832,816,800,784,768,752,736,720,704,688,672,656,640,624,608,592,576,560,544,528,512,496,480,464,448,432,416,400,384,368,352,336,320,304,288,272,256,240,224,208,192,176,160,144,128,112,96,80,64,48,32,16};
 
 // TODO: Equation to calculate TIM2_Ticks
-uint32_t TIM2_Ticks = (TIM2CLK * (1/F_SIGNAL))/NS; // How often to write new LUT value
+uint32_t TIM2_Ticks = (uint32_t)(((float)TIM2CLK * (1/(float)F_SIGNAL)) / (float)NS); // How often to write new LUT value
 uint32_t DestAddress = (uint32_t) &(TIM3->CCR3); // Write LUT TO TIM3->CCR3 to modify PWM duty cycle
 
 uint32_t buttonBounce = 0;
@@ -77,6 +80,7 @@ static void MX_TIM3_Init(void);
 
 /* USER CODE BEGIN PFP */
 void EXTI0_1_IRQHandler(void);
+void LCDwrite(char *string);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -116,21 +120,19 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
   // TODO: Start TIM3 in PWM mode on channel 3
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3); // Start TIM3 in PWM on channel 3
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
 
   // TODO: Start TIM2 in Output Compare (OC) mode on channel 1.
-  HAL_TIM_OC_Start(&htim2, TIM_CHANNEL_1); // Start TIM2 in OC on channel 1
+  HAL_TIM_OC_Start(&htim2, TIM_CHANNEL_1);
 
   // TODO: Start DMA in IT mode on TIM2->CH1; Source is LUT and Dest is TIM3->CCR3; start with Sine LUT
   HAL_DMA_Start_IT(&hdma_tim2_ch1, &sin_LUT, DestAddress, NS);
 
-
   // TODO: Write current waveform to LCD ("Sine")
   LCDwrite("Sine");
-  delay(1000);
 
   // TODO: Enable DMA (start transfer from LUT to CCR)
-  __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1); // starts DMA transfer
+  __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
 
   /* USER CODE END 2 */
 

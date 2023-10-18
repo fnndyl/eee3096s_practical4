@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -17,15 +17,15 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
   14              		.text
   15              	.Ltext0:
   16              		.cfi_sections	.debug_frame
-  17              		.file 1 "Core/Src/system_stm32f0xx.c"
-  18              		.section	.text.SystemInit,"ax",%progbits
-  19              		.align	1
-  20              		.global	SystemInit
-  21              		.syntax unified
-  22              		.code	16
-  23              		.thumb_func
-  25              	SystemInit:
-  26              	.LFB40:
+  17              		.section	.text.SystemInit,"ax",%progbits
+  18              		.align	1
+  19              		.global	SystemInit
+  20              		.syntax unified
+  21              		.code	16
+  22              		.thumb_func
+  24              	SystemInit:
+  25              	.LFB40:
+  26              		.file 1 "Core/Src/system_stm32f0xx.c"
    1:Core/Src/system_stm32f0xx.c **** /**
    2:Core/Src/system_stm32f0xx.c ****   ******************************************************************************
    3:Core/Src/system_stm32f0xx.c ****   * @file    system_stm32f0xx.c
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
   30:Core/Src/system_stm32f0xx.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
   31:Core/Src/system_stm32f0xx.c ****   *
   32:Core/Src/system_stm32f0xx.c ****   ******************************************************************************
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 2
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 2
 
 
   33:Core/Src/system_stm32f0xx.c ****   */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
   87:Core/Src/system_stm32f0xx.c ****   */
   88:Core/Src/system_stm32f0xx.c **** 
   89:Core/Src/system_stm32f0xx.c **** /** @addtogroup STM32F0xx_System_Private_Variables
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 3
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 3
 
 
   90:Core/Src/system_stm32f0xx.c ****   * @{
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
   36              	.LFE40:
   38              		.global	__aeabi_uidiv
   39              		.section	.text.SystemCoreClockUpdate,"ax",%progbits
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 4
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 4
 
 
   40              		.align	1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
   50              		@ args = 0, pretend = 0, frame = 0
   51              		@ frame_needed = 0, uses_anonymous_args = 0
   52 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 5
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 5
 
 
   53              		.cfi_def_cfa_offset 8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
  214:Core/Src/system_stm32f0xx.c **** #if defined(STM32F042x6) || defined(STM32F048xx)  || defined(STM32F070x6) \
  215:Core/Src/system_stm32f0xx.c ****  || defined(STM32F078xx) || defined(STM32F071xB)  || defined(STM32F072xB) \
  216:Core/Src/system_stm32f0xx.c ****  || defined(STM32F070xB) || defined(STM32F091xC) || defined(STM32F098xx)  || defined(STM32F030xC)
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 6
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 6
 
 
  217:Core/Src/system_stm32f0xx.c ****         /* HSI used as PLL clock source : SystemCoreClock = HSI/PREDIV * PLLMUL */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
  105 002c 1340     		ands	r3, r2
  106              		.loc 1 233 22 view .LVU21
  107 002e 174A     		ldr	r2, .L9+12
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 7
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 7
 
 
  108 0030 D15C     		ldrb	r1, [r2, r3]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
  147 004a A40C     		lsrs	r4, r4, #18
  148              	.LVL16:
  197:Core/Src/system_stm32f0xx.c ****       predivfactor = (RCC->CFGR2 & RCC_CFGR2_PREDIV) + 1;
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 8
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 8
 
 
  149              		.loc 1 197 27 view .LVU37
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
  221:Core/Src/system_stm32f0xx.c **** #endif /* STM32F042x6 || STM32F048xx || STM32F070x6 || 
  190              		.loc 1 221 25 view .LVU51
  191 0078 024A     		ldr	r2, .L9+4
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 9
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 9
 
 
  192 007a 1360     		str	r3, [r2]
@@ -487,53 +487,55 @@ ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 1
  195 007e C046     		.align	2
  196              	.L9:
  197 0080 00100240 		.word	1073876992
- 198 0084 00000000 		.word	SystemCoreClock
+ 198 0084 00000000 		.word	.LANCHOR0
  199 0088 00127A00 		.word	8000000
- 200 008c 00000000 		.word	AHBPrescTable
+ 200 008c 00000000 		.word	.LANCHOR1
  201              		.cfi_endproc
  202              	.LFE41:
  204              		.global	APBPrescTable
- 205              		.section	.rodata.APBPrescTable,"a"
- 206              		.align	2
- 209              	APBPrescTable:
- 210 0000 00000000 		.ascii	"\000\000\000\000\001\002\003\004"
- 210      01020304 
- 211              		.global	AHBPrescTable
- 212              		.section	.rodata.AHBPrescTable,"a"
- 213              		.align	2
- 216              	AHBPrescTable:
- 217 0000 00000000 		.ascii	"\000\000\000\000\000\000\000\000\001\002\003\004\006"
- 217      00000000 
- 217      01020304 
- 217      06
- 218 000d 070809   		.ascii	"\007\010\011"
- 219              		.global	SystemCoreClock
- 220              		.section	.data.SystemCoreClock,"aw"
- 221              		.align	2
- 224              	SystemCoreClock:
- 225 0000 00127A00 		.word	8000000
- 226              		.text
- 227              	.Letext0:
- 228              		.file 2 "c:\\users\\dylan\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
- 229              		.file 3 "c:\\users\\dylan\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
- 230              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
- 231              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f051x8.h"
-ARM GAS  C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s 			page 10
+ 205              		.global	AHBPrescTable
+ 206              		.global	SystemCoreClock
+ 207              		.section	.data.SystemCoreClock,"aw"
+ 208              		.align	2
+ 209              		.set	.LANCHOR0,. + 0
+ 212              	SystemCoreClock:
+ 213 0000 00127A00 		.word	8000000
+ 214              		.section	.rodata.AHBPrescTable,"a"
+ 215              		.align	2
+ 216              		.set	.LANCHOR1,. + 0
+ 219              	AHBPrescTable:
+ 220 0000 00000000 		.ascii	"\000\000\000\000\000\000\000\000\001\002\003\004\006"
+ 220      00000000 
+ 220      01020304 
+ 220      06
+ 221 000d 070809   		.ascii	"\007\010\011"
+ 222              		.section	.rodata.APBPrescTable,"a"
+ 223              		.align	2
+ 226              	APBPrescTable:
+ 227 0000 00000000 		.ascii	"\000\000\000\000\001\002\003\004"
+ 227      01020304 
+ 228              		.text
+ 229              	.Letext0:
+ 230              		.file 2 "c:\\users\\dylan\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
+ 231              		.file 3 "c:\\users\\dylan\\appdata\\roaming\\code\\user\\globalstorage\\bmd.stm32-for-vscode\\@xpa
+ 232              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h"
+ 233              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f051x8.h"
+ARM GAS  C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 system_stm32f0xx.c
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:19     .text.SystemInit:0000000000000000 $t
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:25     .text.SystemInit:0000000000000000 SystemInit
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:40     .text.SystemCoreClockUpdate:0000000000000000 $t
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:46     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:197    .text.SystemCoreClockUpdate:0000000000000080 $d
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:224    .data.SystemCoreClock:0000000000000000 SystemCoreClock
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:216    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:209    .rodata.APBPrescTable:0000000000000000 APBPrescTable
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:206    .rodata.APBPrescTable:0000000000000000 $d
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:213    .rodata.AHBPrescTable:0000000000000000 $d
-C:\Users\dylan\AppData\Local\Temp\cczvLPB2.s:221    .data.SystemCoreClock:0000000000000000 $d
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:18     .text.SystemInit:0000000000000000 $t
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:24     .text.SystemInit:0000000000000000 SystemInit
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:40     .text.SystemCoreClockUpdate:0000000000000000 $t
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:46     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:197    .text.SystemCoreClockUpdate:0000000000000080 $d
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:226    .rodata.APBPrescTable:0000000000000000 APBPrescTable
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:219    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:212    .data.SystemCoreClock:0000000000000000 SystemCoreClock
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:208    .data.SystemCoreClock:0000000000000000 $d
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:215    .rodata.AHBPrescTable:0000000000000000 $d
+C:\Users\Dylan\AppData\Local\Temp\ccw5EOvT.s:223    .rodata.APBPrescTable:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv
